@@ -48,17 +48,17 @@ body {
 
 /* Keep your existing position values */
 
-.folder-item:nth-child(1) {
-    top: 30%;
-    left: 25%;
-}
-
-.folder-item:nth-child(2) {
+.folder-item:nth-child(1) {  /* foreword */
     top: 25%;
-    left: 65%;
+    left: 15%;
 }
 
-.folder-item:nth-child(3) {
+.folder-item:nth-child(2) {  /* gallery */
     top: 65%;
-    left: 80%;
+    left: 60%;
+}
+
+.folder-item:nth-child(3) {  /* salvation */
+    top: 30%;
+    left: 85%;
 }
