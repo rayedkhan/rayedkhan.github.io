@@ -1,11 +1,8 @@
 body {
+    background-color: #fafafa;
     margin: 0;
     padding: 0;
-    background-color: #fafafa;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .container {
@@ -24,58 +21,41 @@ body {
 .folder-item {
     position: absolute;
     transform: translate(-50%, -50%);
-    transition: transform 0.2s ease-out;
     cursor: pointer;
-    /* Prevent text selection during hover */
     user-select: none;
-    /* Ensure folders stay on top during hover */
-    z-index: 1;
-}
-
-.folder-item:hover {
-    transform: translate(-50%, -50%) scale(1.05);
-    z-index: 2;
 }
 
 .folder-item img {
     width: 64px;
     height: 64px;
     object-fit: contain;
-}
-
-.photo-thumbnail {
-    width: 64px !important;
-    height: 64px !important;
-    object-fit: cover !important;
+    display: block;
 }
 
 .folder-label {
-    margin-top: 5px;
-    color: #000;
     font-family: monospace;
+    margin-top: 8px;
     font-size: 14px;
+    text-align: center;
+    color: #000;
 }
 
 .folder-item:nth-child(1) {
-    position: absolute;
     top: 88%;
     left: 79%;
 }
 
 .folder-item:nth-child(2) {
-    position: absolute;
     top: 34%;
     left: 8%;
 }
 
 .folder-item:nth-child(3) {
-    position: absolute;
     top: 68%;
     left: 43%;
 }
 
 .folder-item:nth-child(4) {
-    position: absolute;
     top: 9%;
     left: 17%;
 }
