@@ -23,6 +23,10 @@ body {
     transform: translate(-50%, -50%);
     cursor: pointer;
     user-select: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .folder-item img {
@@ -40,22 +44,23 @@ body {
     color: #000;
 }
 
+/* Updated positions to spread icons more evenly */
 .folder-item:nth-child(1) {
-    top: 88%;
-    left: 79%;
+    top: 25%;
+    left: 75%;
 }
 
 .folder-item:nth-child(2) {
-    top: 34%;
-    left: 8%;
+    top: 30%;
+    left: 25%;
 }
 
 .folder-item:nth-child(3) {
-    top: 68%;
-    left: 43%;
+    top: 70%;
+    left: 35%;
 }
 
 .folder-item:nth-child(4) {
-    top: 9%;
-    left: 17%;
+    top: 65%;
+    left: 80%;
 }
