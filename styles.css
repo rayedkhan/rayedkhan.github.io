@@ -35,7 +35,7 @@ body {
     object-fit: contain;
     display: block;
     /* Remove any background */
-    background: transparent;
+    background-color: transparent;
 }
 
 .folder-label {
