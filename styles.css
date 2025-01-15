@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.folder-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 40px;
+    position: relative;
+}
+
+.folder-item {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.folder-item:hover {
+    transform: scale(1.05);
+}
+
+.folder-item img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.photo-thumbnail {
+    width: 64px !important;
+    height: 64px !important;
+    object-fit: cover !important;
+}
+
+.folder-label {
+    margin-top: 5px;
+    color: #000;
+    font-family: monospace;
+    font-size: 14px;
+}
