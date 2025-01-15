@@ -40,7 +40,7 @@ body {
 
 .folder-label {
     font-family: monospace;
-    margin-top: -8px;  /* Moved up by making margin negative */
+    margin-top: -10px;  /* Moved up by making margin negative */
     font-size: 14px;
     text-align: center;
     color: #666666;  /* Changed from #000 to a medium gray */
