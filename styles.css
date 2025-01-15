@@ -30,21 +30,23 @@ body {
 }
 
 .folder-item img {
-    width: 64px;
-    height: 64px;
+    width: 100px;  /* Increased from 64px */
+    height: 100px; /* Increased from 64px */
     object-fit: contain;
     display: block;
+    /* Remove any background */
+    background: transparent;
 }
 
 .folder-label {
     font-family: monospace;
     margin-top: 8px;
-    font-size: 14px;
+    font-size: 16px;  /* Slightly larger font to match larger icons */
     text-align: center;
     color: #000;
 }
 
-/* Updated positions to spread icons more evenly */
+/* Keep your existing position values */
 .folder-item:nth-child(1) {
     top: 25%;
     left: 75%;
