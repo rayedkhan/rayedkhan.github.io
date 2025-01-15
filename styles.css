@@ -47,22 +47,18 @@ body {
 }
 
 /* Keep your existing position values */
-.folder-item:nth-child(1) {
-    top: 25%;
-    left: 75%;
-}
 
-.folder-item:nth-child(2) {
+.folder-item:nth-child(1) {
     top: 30%;
     left: 25%;
 }
 
-.folder-item:nth-child(3) {
+.folder-item:nth-child(2) {
     top: 70%;
     left: 35%;
 }
 
-.folder-item:nth-child(4) {
+.folder-item:nth-child(3) {
     top: 65%;
     left: 80%;
 }
