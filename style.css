@@ -1,0 +1,36 @@
+/* 1. Background fix */
+body {
+    background-color: #fafafa; /* Off-white background */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* 2. Position the folder like "nu thoughts" */
+.desktop-item {
+    position: absolute;
+    bottom: 20%; /* Moves it to the lower section */
+    right: 25%;  /* Moves it to the right side */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; /* Removes the blue underline */
+    color: black;          /* Keeps text black */
+}
+
+/* 3. Scale the icon down */
+.desktop-item img {
+    width: 50px;  /* Smaller icon size */
+    height: auto;
+    margin-bottom: 5px;
+    image-rendering: pixelated; /* Keeps it sharp */
+}
+
+/* 4. Style the text label */
+.desktop-item span {
+    font-size: 13px;
+    text-align: center;
+}
