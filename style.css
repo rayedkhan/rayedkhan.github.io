@@ -50,7 +50,10 @@ body {
     background-color: #004d25; /* Deep Christmas Green */
     margin: 0;
     padding: 60px 20px;
+    /* This allows the page to scroll naturally */
     min-height: 100vh;
+    overflow-y: auto !important; 
+    display: block;
 }
 
 .letter-wrapper {
@@ -58,16 +61,17 @@ body {
     gap: 60px; 
     max-width: 1000px;
     margin: 0 auto;
-    align-items: stretch; 
+    /* Aligns columns but allows them to grow vertically */
+    align-items: flex-start; 
 }
 
 .text-column {
     flex: 1.5; 
-    color: #ff3b3b; /* A bright, readable Christmas Red */
+    color: #ff3b3b; 
     font-weight: bold;
     font-size: 1.15rem;
     line-height: 1.8;
-    white-space: pre-wrap; /* Maintains your exact line breaks */
+    white-space: pre-wrap; 
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -75,28 +79,22 @@ body {
     flex: 1; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* Space out images based on the text height */
+    justify-content: flex-start;
+    gap: 20px; 
 }
 
 .image-column img {
     width: 100%;
-    /* This forces 5 images to fill the height of the text column */
-    height: 18.5%; 
-    object-fit: cover;
+    /* Let the images have a natural height so they don't squash */
+    height: auto; 
     border: 2px solid #ff3b3b;
     border-radius: 4px;
 }
 
-/* Mobile: If screen is small, stack them */
+/* Mobile: Stack them */
 @media (max-width: 800px) {
     .letter-wrapper {
         flex-direction: column;
-        padding-bottom: 50px;
-    }
-    .image-column {
-        gap: 15px;
-    }
-    .image-column img {
-        height: 300px; /* Bigger photos for mobile scrolling */
     }
 }
