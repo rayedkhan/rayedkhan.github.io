@@ -43,3 +43,55 @@ body {
 .desktop-item:visited {
     color: black;
 }
+
+/* --- Letter Page Styles --- */
+
+.letter-page-body {
+    background-color: #004d25; /* Deep Christmas Green */
+    margin: 0;
+    padding: 50px;
+    height: auto;
+    width: auto;
+    overflow-y: auto; /* Allows scrolling if the letter is long */
+    display: block;
+}
+
+.letter-wrapper {
+    display: flex;
+    gap: 40px; /* Space between the text and the images */
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: stretch; /* This helps align the height */
+}
+
+.text-column {
+    flex: 1; /* Takes up the left side */
+    color: #d42426; /* Christmas Red */
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    white-space: pre-line; /* Preserves your paragraph breaks */
+}
+
+.image-column {
+    flex: 1; /* Takes up the right side */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Spreads images to match text height */
+    gap: 10px;
+}
+
+.image-column img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid #d42426; /* Red border around photos */
+    border-radius: 4px;
+}
+
+/* Mobile Friendly: Stack columns on top of each other if the screen is small */
+@media (max-width: 800px) {
+    .letter-wrapper {
+        flex-direction: column;
+    }
+}
