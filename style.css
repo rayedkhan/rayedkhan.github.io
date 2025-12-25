@@ -1,36 +1,45 @@
-/* 1. Background fix */
 body {
-    background-color: #fafafa; /* Off-white background */
+    /* Updated to a warmer off-white */
+    background-color: #fcfcfc; 
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
     position: relative;
     font-family: 'Courier New', Courier, monospace;
+    /* Prevents any weird scrollbars */
+    overflow: hidden; 
 }
 
-/* 2. Position the folder like "nu thoughts" */
 .desktop-item {
     position: absolute;
-    bottom: 20%; /* Moves it to the lower section */
-    right: 25%;  /* Moves it to the right side */
+    /* Moved it up higher and slightly more to the left to match the reference */
+    bottom: 30%; 
+    right: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-decoration: none; /* Removes the blue underline */
-    color: black;          /* Keeps text black */
+    text-decoration: none;
+    color: black;
 }
 
-/* 3. Scale the icon down */
 .desktop-item img {
-    width: 50px;  /* Smaller icon size */
+    /* Increased size to match "nu thoughts" */
+    width: 80px;  
     height: auto;
-    margin-bottom: 5px;
-    image-rendering: pixelated; /* Keeps it sharp */
+    margin-bottom: 8px;
+    /* Keeps the retro pixel edges sharp */
+    image-rendering: pixelated; 
 }
 
-/* 4. Style the text label */
 .desktop-item span {
-    font-size: 13px;
+    font-size: 16px;
     text-align: center;
+    /* Matches the clean look in your screenshot */
+    font-weight: 500;
+}
+
+/* Removes the blue link color even if you've clicked it before */
+.desktop-item:visited {
+    color: black;
 }
