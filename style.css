@@ -85,11 +85,11 @@ body {
 }
 
 .image-column img {
-    display: block;
     width: 100%;
-    height: auto;
-    min-height: 150px; /* Forces the box to have shape even if image is loading */
-    background-color: rgba(255,255,255,0.1); /* Light glow so you know where they are */
+    /* Let the images have a natural height so they don't squash */
+    height: auto; 
+    border: 2px solid #ff3b3b;
+    border-radius: 4px;
 }
 
 /* Mobile: Stack them */
